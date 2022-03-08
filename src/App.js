@@ -1,23 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react';
+import DisplayPost from './Components/DisplayPost';
+
+
+
 
 function App() {
+
+  const [entries, setEntries] = useState([{userName: 'Name Namesonss', post: 'I think things are awesome! maybe i should have Lorem Ispom insteaded. Who knos...'}])
+  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <div><h1>SocialProject</h1></div>
+      <div>
+        <DisplayPost parentEntries ={entries} />
+      </div>    
+      <div><h4>Like</h4></div>
+      <div><h4>Dislike</h4></div>
+        
+        
+        
+        
+        
     </div>
   );
 }
