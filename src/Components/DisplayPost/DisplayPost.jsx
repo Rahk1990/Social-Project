@@ -16,7 +16,7 @@ const DisplayPost = (props) => {
             return (
                 <tr>
                     <td>{entry.userName}</td>,
-                    <td>{entry.post}</td>
+                    <td>{entry.post}</td>,
                     <td>{index}</td>
                 </tr>
             );

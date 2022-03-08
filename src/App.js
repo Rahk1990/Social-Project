@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import DisplayPost from './Components/DisplayPost';
+import CreatePost from './Components/CreatePost/CreatePost';
+import DisplayPost from './Components/DisplayPost/DisplayPost';
 
 
 
@@ -13,6 +14,7 @@ function App() {
       <div><h1>SocialProject</h1></div>
       <div>
         <DisplayPost parentEntries ={entries} />
+        <CreatePost parentEntries ={entries} />
       </div>    
       <div><h4>Like</h4></div>
       <div><h4>Dislike</h4></div>
