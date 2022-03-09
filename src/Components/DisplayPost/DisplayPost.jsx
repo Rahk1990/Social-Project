@@ -15,16 +15,22 @@ const DisplayPost = (props) => {
 
             {props.parentEntries.map((entry,index) => {
             return (
-                <tr>
+                <tr className="entry-border-box">
                     <td>{entry.userName}</td>
                     <td>{entry.post}</td>
                     <td>{index-(0)}</td>
-                </tr>
-                );
 
-            })}
+                    <div><button className="like-border-box">Like</button><button className="dislike-border-box">Dislike</button></div>
+
+                </tr>
+            );
+            }
             
-            </tbody>   
+            )
+    }
+            
+            </tbody>
+               
       </table>
      );
 }

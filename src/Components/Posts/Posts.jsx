@@ -11,7 +11,6 @@ const Post = (props) =>{
       });
       setPostData(tempPostData);
     }, [props.parentEntries])
-    return postData;
-    
-}
+    return postData;    
+  }
 export default Post;
