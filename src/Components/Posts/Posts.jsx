@@ -7,7 +7,7 @@ const Post = (props) =>{
    
     useEffect(() => {
       let tempPostData = props.parentEntries.map(entry => {
-          return [entry.userName, entry.post];
+          return [entry.userName, entry.post, entry.dateTime];
       });
       setPostData(tempPostData);
     }, [props.parentEntries])

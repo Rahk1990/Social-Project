@@ -6,15 +6,17 @@ const CreatePost  = (props) => {
 
     const [userName, setUserName] = useState('');
     const [post, setPost] = useState('');
+    // const [dateTime, setDateTime] = useState('');
 
     function handleSubmit(event){
         event.preventDefault();
 
         let newEntry = {
             userName: userName,
-            post: post
+            post: post,
+            // dateTime: dateTime
         };
-        console.log(newEntry);
+        // console.log(newEntry);
         props.createNewPost(newEntry)
     }
 
@@ -26,6 +28,8 @@ const CreatePost  = (props) => {
                     <div className='entries-border-box'>
                     <tr><label>Name</label></tr>
                     <input type= 'name' value={userName} onChange={(event) => setUserName(event.target.value)}/>
+                    {/* <tr><label>Name</label></tr>
+                    <input type= 'name' value={userName} onChange={(event) => setUserName(event.target.value)}/> */}
               
                    
                     <tr><label>Post</label></tr>

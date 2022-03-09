@@ -8,7 +8,7 @@ const DisplayPost = (props) => {
             <tr>
                 <th>Name</th>
                 <th>Post</th>
-                <th>Number</th>
+                <th>Date</th>
             </tr>
             </thead>
             <tbody>
