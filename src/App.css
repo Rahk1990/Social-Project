@@ -5,6 +5,18 @@
     margin: 1em;
     padding: 1em;
     background-color: white;
+    word-wrap: break-word;
+    
+}
+.name-border-box{
+    border: 1px;
+    border-style: solid;
+    border-color: black;
+    margin: 1em;
+    padding: 1em;
+    background-color: white;
+    word-wrap: break-word;
+    font-weight: bold;
     
 }
 .like-border-box{
@@ -33,6 +45,7 @@
     text-justify: auto;
     text-size-adjust: auto;
     background-color: white;
+    word-wrap: break-word;
 }
 .page-background{
     background-color: aquamarine;

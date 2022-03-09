@@ -16,7 +16,7 @@ const DisplayPost = (props) => {
             {props.parentEntries.map((entry,index) => {
             return (
                 <tr className="entry-border-box">
-                    <td>{entry.userName}</td>
+                    <td className="name-border-box">{entry.userName}</td>
                     <td>{entry.post}</td>
                     <td>{index-(0)}</td>
 

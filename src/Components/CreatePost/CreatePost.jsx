@@ -21,15 +21,20 @@ const CreatePost  = (props) => {
     return ( 
         <form onSubmit={handleSubmit}>
            
-
-                    <label>Name</label>
+                <table>
+                    
+                    <div className='entries-border-box'>
+                    <tr><label>Name</label></tr>
                     <input type= 'name' value={userName} onChange={(event) => setUserName(event.target.value)}/>
               
-                    <label>Post</label>
+                   
+                    <tr><label>Post</label></tr>
                     <input type= 'post' value={post} onChange={(event) => setPost(event.target.value)}/>
-                <br>
-                </br> 
-            <button type= 'submit'>Submit Post</button>
+                    </div>
+                <tr>
+                <button type= 'submit'>Submit Post</button>
+                </tr> 
+                </table>
         </form>
      );
 }
