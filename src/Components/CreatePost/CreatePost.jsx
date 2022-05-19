@@ -24,17 +24,18 @@ const CreatePost  = (props) => {
         <form onSubmit={handleSubmit}>
            
                 <table>
+                    <div className='container-fluid'> 
+                        <div className='entries-border-box'>
+                            <tr><label>Name</label></tr>
+                            <input type= 'name' value={userName} onChange={(event) => setUserName(event.target.value)}/>
+                            {/* <tr><label>Name</label></tr>
+                            <input type= 'name' value={userName} onChange={(event) => setUserName(event.target.value)}/> */}
                     
-                    <div className='entries-border-box'>
-                    <tr><label>Name</label></tr>
-                    <input type= 'name' value={userName} onChange={(event) => setUserName(event.target.value)}/>
-                    {/* <tr><label>Name</label></tr>
-                    <input type= 'name' value={userName} onChange={(event) => setUserName(event.target.value)}/> */}
-              
-                   
-                    <tr><label>Post</label></tr>
-                    <input type= 'post' value={post} onChange={(event) => setPost(event.target.value)}/>
-                    </div>
+                        
+                            <tr><label>Post</label></tr>
+                            <input type= 'post' value={post} onChange={(event) => setPost(event.target.value)}/>
+                        </div>
+                    </div> 
                 <tr>
                 <button type= 'submit'>Submit Post</button>
                 </tr> 
