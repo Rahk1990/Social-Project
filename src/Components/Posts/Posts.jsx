@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'; //imsr used here//
+import { useState, useEffect } from 'react'; //imsr used here//
 
 // Saves post for the user to see//
 const Post = (props) =>{
